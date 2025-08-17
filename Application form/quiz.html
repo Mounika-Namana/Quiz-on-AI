@@ -1,0 +1,93 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Basics</title>
+    <style>
+        body{
+            background-image: url('c:/Users/mouni/Downloads/image.jpg.jpeg');
+            margin: 0;
+            padding: 0;
+            background-position: center;
+            background-size: cover;
+        }
+          h1 {
+            margin-top: 80px;
+            margin-left: 450px;
+            color: #222;
+            background-color: rgba(22, 225, 46, 0.8);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+       .quiz {
+            display: flex;
+            flex-direction: column;   
+            align-items: center;     
+            margin-top: 10px;
+            margin-left: -200px;
+        }
+        a{
+            text-decoration: none;
+            margin: 12px 0;
+        }
+
+        button {
+             display: inline-block;
+            padding: 12px 20px;
+            margin: 15px; 
+            background-color: #f0075d;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            border: 1px solid black;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: peachpuff;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .b1 {
+             color: #1a73e8;
+            }
+        .b2 {
+             color: #fbbc05; 
+        }  
+        .b3 {
+             color: #34a853; 
+            } 
+         a:hover{            
+                text-shadow: 0 0 5px #ff7043; 
+            }
+            .anchor {
+            display: block;
+            margin-top: 40px;
+           margin-left: 630px;
+            color: #333;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Are you ready for the AI quiz</h1>
+    <div class="quiz">
+        <a href="basic.html">
+        <button type="button"><span class="b1">Basic</span></button>
+        </a><br>
+        <a href="Medium.html">
+        <button type="button"><span class="b2">Medium</span></button>
+        </a>
+        <a href="Advanced.html">
+  <button type="button"><span class="b3">Advanced</span></button>
+</a>
+
+    </div>
+    <a href="index.html"><span class="anchor">Back to home</span></a>
+</body>

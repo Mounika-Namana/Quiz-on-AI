@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f8fb;
+      background-image: url('c:/Users/mouni/Downloads/image.jpg.jpeg');
+    }
+
+    h1 {
+      color: #222;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 25px;
+      color: #2f0333;
+    }
+
+    .option {
+      display: block;
+      margin: 8px 0;
+      cursor: pointer;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .option span {
+      display: inline-block;
+      padding: 8px 15px;
+      border: 2px solid #444;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    input[type="radio"]:checked:not(.correct) + span {
+      background: #ff4d4d;
+      color: white;
+      border-color: red;
+    }
+
+    input[type="radio"].correct:checked + span {
+      background: #4CAF50;
+      color: white;
+      border-color: green;
+    }
+
+    hr {
+      margin: 20px 0;
+    }
+     a:hover{            
+                text-shadow: 0 0 5px #ff7043; 
+            }
+  </style>
+</head>
+<body>
+
+  <h1>AI Quiz - Advanced Level</h1>
+  <h2>Question 1: In Gradient Descent, what does the "learning rate" control?</h2>
+  <label class="option"><input type="radio" name="q1"><span>The size of the dataset</span></label>
+  <label class="option"><input type="radio" name="q1" class="correct"><span>The step size for updating weights</span></label>
+  <label class="option"><input type="radio" name="q1"><span>The number of hidden layers</span></label>
+  <label class="option"><input type="radio" name="q1"><span>The complexity of the model</span></label>
+  <hr>
+  <h2>Question 2: What is the main advantage of the Transformer architecture over RNNs?</h2>
+  <label class="option"><input type="radio" name="q2"><span>It requires fewer training samples</span></label>
+  <label class="option"><input type="radio" name="q2"><span>It has fewer parameters</span></label>
+  <label class="option"><input type="radio" name="q2" class="correct"><span>It processes sequences in parallel using self-attention</span></label>
+  <label class="option"><input type="radio" name="q2"><span>It only works for images</span></label>
+  <hr>
+  <h2>Question 3: Which loss function is typically used for multi-class classification?</h2>
+  <label class="option"><input type="radio" name="q3"><span>Mean Squared Error</span></label>
+  <label class="option"><input type="radio" name="q3" class="correct"><span>Categorical Cross-Entropy</span></label>
+  <label class="option"><input type="radio" name="q3"><span>Hinge Loss</span></label>
+  <label class="option"><input type="radio" name="q3"><span>Binary Cross-Entropy</span></label>
+  <hr>
+  <h2>Question 4: What is "vanishing gradient problem" in deep neural networks?</h2>
+  <label class="option"><input type="radio" name="q4"><span>Model stops updating due to large gradients</span></label>
+  <label class="option"><input type="radio" name="q4" class="correct"><span>Gradients become very small, slowing or stopping learning</span></label>
+  <label class="option"><input type="radio" name="q4"><span>Neurons fire randomly during training</span></label>
+  <label class="option"><input type="radio" name="q4"><span>Loss function does not converge</span></label>
+  <hr>
+  <h2>Question 5: Which optimization algorithm uses momentum to accelerate gradient descent?</h2>
+  <label class="option"><input type="radio" name="q5"><span>Adam</span></label>
+  <label class="option"><input type="radio" name="q5" class="correct"><span>SGD with Momentum</span></label>
+  <label class="option"><input type="radio" name="q5"><span>RMSProp</span></label>
+  <label class="option"><input type="radio" name="q5"><span>AdaGrad</span></label>
+  <hr>
+ <a href="index.html"><span class="anchor">Back to home</span></a>
+</body>
+</html>

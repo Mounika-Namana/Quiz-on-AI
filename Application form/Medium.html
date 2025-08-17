@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+      background-image: url('c:/Users/mouni/Downloads/image.jpg.jpeg');
+    }
+    h1 {
+      color: #222;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 25px;
+      color: #2f0333;
+    }
+
+    .option {
+      display: block;
+      margin: 8px 0;
+      cursor: pointer;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .option span {
+      display: inline-block;
+      padding: 8px 15px;
+      border: 2px solid #444;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    input[type="radio"]:checked:not(.correct) + span {
+      background: #ff4d4d;
+      color: white;
+      border-color: red;
+    }
+
+    input[type="radio"].correct:checked + span {
+      background: #4CAF50;
+      color: white;
+      border-color: green;
+    }
+
+    hr {
+      margin: 20px 0;
+    }
+     a:hover{            
+                text-shadow: 0 0 5px #ff7043; 
+            }
+  </style>
+</head>
+<body>
+
+  <h1>AI Quiz - Medium Level</h1>
+
+  <!-- Q1 -->
+  <h2>Question 1: Which algorithm is the foundation of Decision Trees?</h2>
+  <label class="option"><input type="radio" name="q1"><span>K-means</span></label>
+  <label class="option"><input type="radio" name="q1"><span>Naive Bayes</span></label>
+  <label class="option"><input type="radio" name="q1" class="correct"><span>ID3 Algorithm</span></label>
+  <label class="option"><input type="radio" name="q1"><span>Apriori</span></label>
+  <hr>
+
+  <!-- Q2 -->
+  <h2>Question 2: Which of these is an example of a reinforcement learning application?</h2>
+  <label class="option"><input type="radio" name="q2"><span>Spam Email Filtering</span></label>
+  <label class="option"><input type="radio" name="q2"><span>Handwriting Recognition</span></label>
+  <label class="option"><input type="radio" name="q2" class="correct"><span>AlphaGo (Game Playing)</span></label>
+  <label class="option"><input type="radio" name="q2"><span>Text Summarization</span></label>
+  <hr>
+
+  <!-- Q3 -->
+  <h2>Question 3: What is the main drawback of the Turing Test?</h2>
+  <label class="option"><input type="radio" name="q3"><span>It requires AI hardware</span></label>
+  <label class="option"><input type="radio" name="q3" class="correct"><span>It only measures imitation, not intelligence</span></label>
+  <label class="option"><input type="radio" name="q3"><span>It needs supervised learning</span></label>
+  <label class="option"><input type="radio" name="q3"><span>It is too costly</span></label>
+  <hr>
+
+  <!-- Q4 -->
+  <h2>Question 4: In Machine Learning, what is "overfitting"?</h2>
+  <label class="option"><input type="radio" name="q4"><span>Model performs well on all datasets</span></label>
+  <label class="option"><input type="radio" name="q4"><span>Model ignores training data</span></label>
+  <label class="option"><input type="radio" name="q4" class="correct"><span>Model performs well on training data but poorly on new data</span></label>
+  <label class="option"><input type="radio" name="q4"><span>Model reduces bias</span></label>
+  <hr>
+
+  <!-- Q5 -->
+  <h2>Question 5: Which neural network is best suited for image recognition tasks?</h2>
+  <label class="option"><input type="radio" name="q5"><span>RNN (Recurrent Neural Network)</span></label>
+  <label class="option"><input type="radio" name="q5"><span>GAN (Generative Adversarial Network)</span></label>
+  <label class="option"><input type="radio" name="q5" class="correct"><span>CNN (Convolutional Neural Network)</span></label>
+  <label class="option"><input type="radio" name="q5"><span>DBN (Deep Belief Network)</span></label>
+  <hr>
+  <a href="index.html"><span class="anchor">Back to home</span></a>
+
+</body>
+</html>

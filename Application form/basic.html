@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+      background-image: url('c:/Users/mouni/Downloads/image.jpg.jpeg');
+    }
+    h1 {
+      color: #222;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 25px;
+      color: #2f0333;
+    }
+
+    .option {
+      display: block;
+      margin: 8px 0;
+      cursor: pointer;
+    } 
+    input[type="radio"] {
+      display: none;
+    }
+
+    .option span {
+      display: inline-block;
+      padding: 8px 15px;
+      border: 2px solid #444;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    input[type="radio"]:checked:not(.correct) + span {
+      background: #ff4d4d;
+      color: white;
+      border-color: red;
+    }
+
+    input[type="radio"].correct:checked + span {
+      background: #4CAF50;
+      color: white;
+      border-color: green;
+    }
+
+    hr {
+      margin: 20px 0;
+    }
+     a:hover{            
+                text-shadow: 0 0 5px #ff7043; 
+            }
+  </style>
+</head>
+<body>
+
+  <h1>AI Quiz-Basic Level</h1>
+  <h2>Question 1: Who is considered the founder of Artificial Intelligence?</h2>
+  <label class="option"><input type="radio" name="q1"><span>Alan Turing</span></label>
+  <label class="option"><input type="radio" name="q1"><span>Albert Einstein</span></label>
+  <label class="option"><input type="radio" name="q1" class="correct"><span>John McCarthy</span></label>
+  <label class="option"><input type="radio" name="q1"><span>Bill Gates</span></label>
+  <hr>
+  <h2>Question 2: When was the term "Artificial Intelligence" coined?</h2>
+  <label class="option"><input type="radio" name="q2"><span>1943</span></label>
+  <label class="option"><input type="radio" name="q2"><span>1950</span></label>
+  <label class="option"><input type="radio" name="q2" class="correct"><span>1956</span></label>
+  <label class="option"><input type="radio" name="q2"><span>1965</span></label>
+  <hr>
+  <h2>Question 3: What is the full form of AI?</h2>
+  <label class="option"><input type="radio" name="q3"><span>Automatic Integration</span></label>
+  <label class="option"><input type="radio" name="q3" class="correct"><span>Artificial Intelligence</span></label>
+  <label class="option"><input type="radio" name="q3"><span>Applied Information</span></label>
+  <label class="option"><input type="radio" name="q3"><span>Advanced Innovation</span></label>
+  <hr>
+  <h2>Question 4: Which of the following is NOT an application of AI?</h2>
+  <label class="option"><input type="radio" name="q4"><span>Speech Recognition</span></label>
+  <label class="option"><input type="radio" name="q4"><span>Self-driving Cars</span></label>
+  <label class="option"><input type="radio" name="q4" class="correct"><span>Manual Typewriter</span></label>
+  <label class="option"><input type="radio" name="q4"><span>Chatbots</span></label>
+  <hr>
+  <h2>Question 5: Which of these programming languages is most commonly used in AI?</h2>
+  <label class="option"><input type="radio" name="q5"><span>HTML</span></label>
+  <label class="option"><input type="radio" name="q5"><span>CSS</span></label>
+  <label class="option"><input type="radio" name="q5" class="correct"><span>Python</span></label>
+  <label class="option"><input type="radio" name="q5"><span>SQL</span></label>
+  <hr>
+  <a href="index.html"><span class="anchor">Back to home</span></a>
+
+</body>
+</html>
